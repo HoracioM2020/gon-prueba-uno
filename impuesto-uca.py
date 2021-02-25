@@ -12,11 +12,11 @@ def main():
 
 def impuesto(a):
     if a <= ipi["Indif"]:
-        resultado = (ipi["%-min"] / 100) * a - ipi["Dtomin"]
+        resultado_final = (ipi["%-min"] / 100) * a - ipi["Dtomin"]
     if a < 0:
-        resultado = 0
+        resultado_final = 0
         print("Usted es un afortunado")
     elif a > ipi["Indif"]:
-        resultado = ipi["Basemax"] + (a - ipi["Indif"] * ipi["%-max"]) / 100
+        resultado_final = ipi["Basemax"] + (a - ipi["Indif"] * ipi["%-max"]) / 100
 
-    return resultado
+    return resultado_final
