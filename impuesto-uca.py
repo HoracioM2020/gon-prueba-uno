@@ -1,4 +1,4 @@
-ipi={"Dtomin": 556.02, "Indif": 85528, "Basemax": 14839.02, "%-min": 18, "%-max": 32}
+ipi={"Dtomin": 556.02, "Indif": 85528, "Basemax": 14839.02, "Porcentaje-min": 18, "Porcentaje-max": 32}
 print(ipi)
 print(ipi["Basemax"])
 
@@ -12,11 +12,11 @@ def main():
 
 def impuesto(a):
     if a <= ipi["Indif"]:
-        resultado_final = (ipi["%-min"] / 100) * a - ipi["Dtomin"]
+        resultado_final  = (ipi["Porcentaje-min"] / 100) * a - ipi["Dtomin"]
     if a < 0:
         resultado_final = 0
         print("Usted es un afortunado")
     elif a > ipi["Indif"]:
-        resultado_final = ipi["Basemax"] + (a - ipi["Indif"] * ipi["%-max"]) / 100
+        resultado_final  = ipi["Basemax"] + (a - ipi["Indif"] * ipi["Porcentaje-max"]) / 100
 
     return resultado_final
