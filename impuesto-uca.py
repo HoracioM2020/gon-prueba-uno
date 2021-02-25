@@ -6,7 +6,7 @@ def main():
   a=int(input("su ingreso anual: "))
   print()
   b=impuesto(a)
-  print("El impuesto  es de "), 
+  print("El impuesto es de "), 
   c=round(b,0)
   print(c)
 
