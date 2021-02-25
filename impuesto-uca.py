@@ -17,7 +17,6 @@ def calcular_impuesto(a):
         resultado_final = 0
         print("Usted es un afortunado")
     elif a > ipi["Indif"]:
-        resultado_final = ipi["Basemax"] + (a - ipi["Indif"] * ipi["%-max"]) / 100
-        resultado = ipi["Basemax"] + (a - ipi["Indif"] * ipi["Porcentaje-max"]) / 100
+        resultado_final = ipi["Basemax"] + (a - ipi["Indif"] * ipi["Porcentaje-max"]) / 100
 
     return resultado_final
