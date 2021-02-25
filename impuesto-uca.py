@@ -1,4 +1,10 @@
-ipi={"Dtomin": 556.02, "Indif": 85528, "Basemax": 14839.02, "Porcentaje-min": 18, "Porcentaje-max": 32}
+ipi = {
+    "Dtomin": 556.02, 
+    "Indif": 85528, 
+    "Basemax": 14839.02, 
+    "Porcentaje-min": 18, 
+    "Porcentaje-max": 32
+}
 print(ipi)
 print(ipi["Basemax"])
 
